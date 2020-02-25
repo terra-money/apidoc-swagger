@@ -3,8 +3,7 @@
   "version": "0.2.3",
   "description": "Convert api doc json to swagger json",
   "author": "Bahman Fakhr Sabahi",
-  "license": {
-    "type": "MIT",
+  "license": "MIT",
   "preferGlobal": true,
   "bin": "bin/apidocSwagger.js",
   "main": "./lib/index.js",
@@ -28,7 +27,9 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "apidoc-core": "0.3.2",
+    "apidoc-core": "0.11.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
     "fs-extra": "^0.16.5",
     "lodash": "^3.5.0",
     "marked": "^0.3.3",
