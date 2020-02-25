@@ -5,7 +5,7 @@
   "author": "Bahman Fakhr Sabahi",
   "license": "MIT",
   "preferGlobal": true,
-  "bin": "bin/apidocSwagger.js",
+  "bin": "bin/apidocToSwagger.js",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
