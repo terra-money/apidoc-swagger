@@ -5,8 +5,6 @@
   "author": "Bahman Fakhr Sabahi",
   "license": {
     "type": "MIT",
-    "url": "https://github.com/fsbahman/apidoc-swagger/blob/master/README.md/LICENSE"
-  },
   "preferGlobal": true,
   "bin": "bin/apidocSwagger.js",
   "main": "./lib/index.js",
