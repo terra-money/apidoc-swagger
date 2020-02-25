@@ -5,7 +5,7 @@
   "author": "Bahman Fakhr Sabahi",
   "license": "MIT",
   "preferGlobal": true,
-  "bin": "bin/apidocToSwagger.js",
+  "bin": "bin/apidocSwagger.js",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
@@ -37,24 +37,5 @@
     "path-to-regexp": "^1.2.0",
     "winston": "^0.9.0"
   },
-  "devDependencies": {},
-  "jshintConfig": {
-    "camelcase": true,
-    "curly": false,
-    "eqeqeq": true,
-    "forin": true,
-    "latedef": false,
-    "newcap": true,
-    "undef": true,
-    "unused": true,
-    "trailing": true,
-    "node": true,
-    "browser": true,
-    "predef": [
-      "it",
-      "describe",
-      "before",
-      "after"
-    ]
-  }
+  "devDependencies": {}
 }
