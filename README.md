@@ -27,10 +27,17 @@ By putting in line comments in the source code like this in javascript, you will
 ```
 
 
-## Installation
+<!-- ## Installation
 
-`npm install apidoc-swagger -g`
+`npm install apidoc-swagger -g` -->
 
+## Installation from git
+```sh
+    git clone https://github.com/terra-project/apidoc-swagger.git
+    cd apidoc-swagger
+    npm install
+    npm link
+```
 
 Current version unlocks most of the basic capabilities of both projects and improvement is in progress.
 
