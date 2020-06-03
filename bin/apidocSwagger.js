@@ -46,7 +46,7 @@ var argv = nomnom
     .option('simulate', { flag: true, 'default': false, help: 'Execute but not write any file.' })
 
     // markdown settings
-    .option('markdown', { flag: true, 'default': true, help: 'Turn off markdown parser.' })
+    .option('markdown', { flag: true, 'default': false, help: 'Turn off markdown parser.' })
 
     .parse()
 ;
