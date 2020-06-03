@@ -47,7 +47,8 @@ var argv = nomnom
 
     // markdown settings
     .option('markdown', { flag: true, 'default': false, help: 'Turn off markdown parser.' })
-
+    .option('host', { full: 'host', 'default': '', help: 'Swagger host' })
+    .option('base-path', { abbr: 'bp', full: 'basepath', 'default': '', help: 'Base path for swagger uri call',  })
     .parse()
 ;
 
@@ -90,7 +91,9 @@ var options = {
     workers       : transformToObject(argv['parse-workers']),
     silent        : argv['silent'],
     simulate      : argv['simulate'],
-    markdown      : argv['markdown']
+    markdown      : argv['markdown'],
+    host          : argv['host'],
+    basePath      : argv['base-path']
 };
 
 if (apidocSwagger.createApidocSwagger(options) === false) {
