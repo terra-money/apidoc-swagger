@@ -48,7 +48,8 @@ var argv = nomnom
     // markdown settings
     .option('markdown', { flag: true, 'default': false, help: 'Turn off markdown parser.' })
     .option('host', { full: 'host', 'default': '', help: 'Swagger host' })
-    .option('base-path', { abbr: 'bp', full: 'basepath', 'default': '', help: 'Base path for swagger uri call',  })
+    .option('base-path', { full: 'basepath', 'default': '', help: 'Base path for swagger uri call',  })
+    .option('apigateway', { flag: true, 'default': false, help: 'Generated for AWS api gateway' })
     .parse()
 ;
 
@@ -93,7 +94,8 @@ var options = {
     simulate      : argv['simulate'],
     markdown      : argv['markdown'],
     host          : argv['host'],
-    basePath      : argv['base-path']
+    basePath      : argv['base-path'],
+    apiGateway    : argv['apigateway']
 };
 
 if (apidocSwagger.createApidocSwagger(options) === false) {
