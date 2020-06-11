@@ -19,6 +19,8 @@ const expectedObject = {
         "/user/id": {
             "get": {
                 "tags": ["User"],
+                "summary": "Request User information",
+                "description": "Request User information",
                 "consumes": ["application/json"],
                 "produces": ["application/json"],
                 "parameters": [{
@@ -49,11 +51,13 @@ const expectedObject = {
                     "description": "Lastname of the User."
                 }
             },
-            "required": ["firstname",
-                "lastname"]
+            "required": [
+                "firstname",
+                "lastname"
+            ]
         }
     }
-};
+}
 
 test('simple file should be transformed correctly', () => {
     var transformedObj = transformer.createApidocSwagger(options);
